@@ -1,0 +1,5 @@
+if (' ') {
+    console.log('este codigo se ejecuta si es true');
+} else {
+    console.log('este codigo se ejecura si es false')
+}
