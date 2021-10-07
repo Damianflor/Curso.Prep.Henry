@@ -3,3 +3,66 @@ if (' ') {
 } else {
     console.log('este codigo se ejecura si es false')
 }
+
+// todos los numeros son true excepto el cero 
+// todas las strings son true excepto el vacio
+
+1 < 1 false  
+1 >= 5 false
+1 == 1 true
+1 == '1' true
+1 === '1' false       
+1 !== 1 false 
+
+// doble igual trata de comparar con su inteligencia y triple lo hace mas especifico
+
+(!a || !b)
+//and && 
+//or  ||
+//not !
+
+for (var i = 1; i <= 100; i++) {
+    console.log(i)
+}
+//defines hasta que numero 
+funcion imprime1aN(n) {
+    for (var i = 1; i <= n; i++) {
+        console.log(i);
+    }
+}
+//vas definiendo cuantos numeros quieres imprimir
+funcion imprime1aN(n) {
+  for (var i = 1; i <= n; i++) {
+    if( i % 2 === 0) {
+        console.log(i);
+    }
+  }
+} 
+// imprime numeros pares 
+funcion imprime1aN(n) {
+  for (var i = 1; i <= n; i++) {
+    if( i % 2 === 0) {
+        console.log(i);
+    }
+    if ( i > 200 ) {
+        return; 
+    }
+  }
+} 
+// poner limite hasta el 200, depende de lo que quieras
+funcion imprime1aN(n) {
+  for (var i = 1; i <= n; i++) {
+    if( i % 2 === 0) {
+        console.log(i);
+    }
+    if ( i > 200 ) {
+        for(var j = 0; j < 10; j++){
+            console.log(j);
+        }
+        return; 
+    }
+  }
+} 
+imprime1aN(201);
+//llega al 200 e imprime otros hasta el 9  depende del numero que quieras 
+
