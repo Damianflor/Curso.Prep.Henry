@@ -161,7 +161,7 @@ function esVerdadero(valor){
   if (valor === false){
     return "Soy falso";
   }
-  return "Soy verdadero"
+  return "Soy verdadero";
 }
 
 function tablaDelSeis(){
