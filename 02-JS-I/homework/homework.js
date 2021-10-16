@@ -60,7 +60,7 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x === y) {
+  if (x <= y) {
     return true;
   } else {
     return false;
@@ -89,7 +89,12 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  return num > 50;
+  if (num > 50) {
+    return true;
+  }
+  else {
+    return false;
+  }
 }
 
 function obtenerResto(x, y) {
@@ -130,7 +135,7 @@ function elevarAlCuadrado(num) {
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return num * num * num;
+  return Math.pow(num, 3)
 }
 
 function elevar(num, exponent) {
@@ -163,12 +168,12 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if(numero === 0) {
-    return false;
+    return "false"
   }
   else if(numero > 0) {
     return "es positivo";
   }
-  else {
+  else if(numero < 0) {
     return "es negativo";
   }
 }
