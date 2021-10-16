@@ -182,7 +182,7 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  return str + '!';
+  return str + 'que ondaa!';
 }
 
 function combinarNombres(nombre, apellido) {
@@ -210,14 +210,14 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  return lado * 4
+  return lado * 4;
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-return (base * altura)/2
+return (base * altura)/2;
 }
 
 
@@ -225,7 +225,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  return euro * 1.2
+  return euro * 1.2;
 }
 
 
@@ -241,7 +241,9 @@ function esVocal(letra){
   if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
     return "es vocal"
   }
-  return "Dato incorrecto"
+  else {
+    return "Dato incorrecto"
+  }
 }
 
 
