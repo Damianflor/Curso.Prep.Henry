@@ -68,7 +68,7 @@ function arrayContiene(array, elemento) {
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
   for(var i = 0; i < array.length; i++) {
-    if (array [i] = elemento) {
+    if(array[i] === elemento) {
       return true;
     }
   }
@@ -185,7 +185,7 @@ function mesesDelAño(array) {
     }
   }
   if(nuevoArray.length < 3) {
-    return "No se encontraron los meses perdidos"
+    return "No se encontraron los meses pedidos"
   }
   else {
       return nuevoArray;
@@ -225,7 +225,7 @@ function breakStatement(numero) {
     }
   }
   if (i < 10) {
-    return 'Se interrumpio la ejecucion';
+    return 'Se interrumpió la ejecución';
   }
   else {
     return array;
