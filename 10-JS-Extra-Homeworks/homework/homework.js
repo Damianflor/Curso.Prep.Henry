@@ -10,7 +10,7 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
-  
+  return Object.entries(objeto)
 }
 
 
@@ -19,6 +19,16 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+  Text = {}
+  for(var i = 0; i < string.length; i++) {
+      let letter = string[i]
+      if(Text[letter] == undefined){
+          Text[letter] = 1
+      } else {
+          Text[letter]++
+      }
+  }
+  return Text
 }
 
 
@@ -27,7 +37,17 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
-}
+  var letras = "";
+  var may = "";
+  for(var i = 0;i < s.length; i++){
+    if (s[i] == s[i].toUpperCase()) {
+        may = may + s[i]
+    } else {
+        letras = letras + s[i]
+    }
+    
+} return may + letras
+} 
 
 
 function asAmirror(str) {
