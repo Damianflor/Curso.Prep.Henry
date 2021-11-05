@@ -1,7 +1,7 @@
 var alumnos = ['luis', 'damian', 'cesar', 'bibis', 'jesus']
 
 alumnos.forEach(function(elemento,indice){
-    console.log(elemento);
+    console.log(elemento,indice);
 })
 
 

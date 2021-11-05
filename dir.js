@@ -50,9 +50,9 @@ var cadenaVerso = "HENRYsoy";
  
 var minusculas = "s"
  
-//dividirCadena(cadenaVerso, minusculas);
+dividirCadena(cadenaVerso, minusculas);
 
-var str = 'asdfghjkl';
+var str = 'asdfghjkl hola como estas';
 var strReverse = str.split('').reverse().join(''); 
 console.log(strReverse)
 
@@ -67,5 +67,29 @@ for(var i = 0;i < s.length; i++){
     }
     
 } console.log(may + letras)
+
+var str = "The Henry Challenge is close!"
+
+//var separar = str.split(" ")
+  //var str1 = "";
+  //var str2 = "";
+  //var str3 = "";
+  //var str4 = "";
+  //var str5 = "";
+  //str1 = separar[0].split('').reverse().join('');
+  //str2 = separar[1].split('').reverse().join('');
+  //str3 = separar[2].split('').reverse().join('');
+  //str4 = separar[3].split('').reverse().join('');
+  //str5 = separar[4].split('').reverse().join('');
+  //console.log(str1 + ' ' + str2 + ' ' + str3 + ' ' + str4 + ' ' + str5) 
+  var separar = str.split(" ")
+  var ter = [];
+  for(var i = 0; i < separar.length; i++){
+    for(var f = separar[i].length - 1; f >= 0; f--){
+      ter.push(separar[i])
+    }
+  }  
+  console.log(ter)
+
 
 
